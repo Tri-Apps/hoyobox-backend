@@ -4,6 +4,7 @@ import dev.hoyobox.api.utils.dsl.JsonArray
 import dev.hoyobox.api.utils.dsl.JsonObject
 import dev.hoyobox.api.utils.dsl.Number
 import dev.hoyobox.api.utils.dsl.String
+import dev.hoyobox.api.v1.games.genshinImpactApi
 import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
@@ -38,5 +39,7 @@ fun Route.gamesApi() {
             }
         })
     }
+
+    genshinImpactApi()
 
 }
